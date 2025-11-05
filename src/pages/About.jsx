@@ -104,6 +104,15 @@ export default function About() {
                   1.6 Years Experience
                 </span>
               </div>
+            </div> < br />
+             {/* Experience Item 2 - Internship */}
+              <div className="relative pl-8 border-l-4 border-blue-500/50 hover:border-blue-500 transition-all duration-300">
+              <div className="absolute -left-2.5 top-0 w-4 h-4 bg-blue-500 rounded-full shadow-lg shadow-blue-500/50"></div>
+              <div className="flex flex-col lg:flex-row lg:justify-between lg:items-start mb-2">
+                <span className="font-bold text-2xl text-white">Internship</span>
+                <span className="text-sm text-blue-300 bg-blue-500/10 px-3 py-1 rounded-full mt-2 lg:mt-0 w-fit">October 1, 2025 - January 1, 2026</span>
+              </div>
+              <span className="text-gray-300 text-lg">The Entrepreneurship Network</span>
             </div>
 
           </div>
@@ -170,4 +179,5 @@ export default function About() {
       `}</style>
     </section>
   );
+
 }
