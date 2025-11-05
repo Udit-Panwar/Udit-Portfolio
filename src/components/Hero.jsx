@@ -52,14 +52,14 @@ export default function Hero() {
           </div>
 
           {/* CTA Buttons */}
-          <div className="flex gap-4 pt-4">
+          {/* <div className="flex gap-4 pt-4">
             <button className="px-8 py-4 bg-gradient-to-r from-red-500 to-purple-600 text-white font-semibold rounded-full shadow-lg hover:shadow-purple-500/50 hover:scale-105 transition-all duration-300">
               View Projects
             </button>
             <button className="px-8 py-4 bg-white/10 backdrop-blur-sm text-white font-semibold rounded-full border border-white/20 hover:bg-white/20 hover:scale-105 transition-all duration-300">
               Contact Me
             </button>
-          </div>
+          </div> */}
 
         </div>
 
@@ -179,4 +179,5 @@ export default function Hero() {
       `}</style>
     </section>
   );
+
 }
