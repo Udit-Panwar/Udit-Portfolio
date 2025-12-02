@@ -3,17 +3,19 @@ import React from "react";
 export default function Projects() {
   const projects = [
     {
-      title: "Hotel Website",
-      description: "Welcome to our hotel, where comfort meets elegance and every stay is a memorable experience. Here, you can explore our beautifully designed rooms, world-class amenities, and exceptional services tailored to meet your needs. Each space is carefully curated to ensure a perfect blend of luxury and functionality. We are dedicated to providing an experience that combines relaxation with impeccable hospitality. Our commitment to excellence reflects in every detail, from our cuisine to our personalized services. Feel free to explore our offerings, make reservations, and discover the warmth of our hospitality. This website is not just an introduction to our hotel, but a reflection of our passion for creating unforgettable moments. We hope it inspires you to choose us for your next stay and experience true comfort and care.",
-      link: "https://hotel-website-five-lac.vercel.app",
-      icon: "🏨",
-      color: "from-orange-500 to-red-500",
-      hoverColor: "orange"
+      title: "E-Learning Platform",
+      description: "Welcome to our E-Learning platform, your gateway to modern, accessible, and high-quality education. Explore a wide range of courses designed to help learners grow at their own pace with interactive lessons, hands-on projects, and expert guidance. Our platform combines intuitive design with powerful learning tools, ensuring a smooth and engaging learning experience for students of all levels. Whether you're upskilling, preparing for exams, or exploring new topics, our goal is to provide education that is both effective and enjoyable. Discover courses, track progress, earn certificates, and take a step forward in your learning journey with us. This website reflects our passion for empowering learners and making education available anytime, anywhere.",
+      link: "https://e-learning-website-1.vercel.app/",
+      github: "https://github.com/Udit-Panwar/E-learning-Website",
+      icon: "📚",
+      color: "from-blue-500 to-indigo-600",
+      hoverColor: "blue"
     },
     {
       title: "E-commerce App",
       description: "Welcome to our e-commerce platform, where shopping is made simple, fast, and secure. Explore a wide range of products across multiple categories, all curated to meet your needs and lifestyle. Enjoy a seamless browsing experience with easy navigation and detailed product descriptions. Our secure payment system ensures that your transactions are safe and hassle-free. Benefit from fast and reliable delivery straight to your doorstep. Stay updated with the latest deals, offers, and discounts to get the best value for your money. Our responsive customer support is always ready to assist you with any queries. Shop anytime, anywhere, on any device with our fully optimized platform. Experience convenience, reliability, and satisfaction with every purchase. Make your online shopping journey effortless and enjoyable with us.",
       link: "https://e-commerce-gray-phi-51.vercel.app",
+      github: "https://github.com/Udit-Panwar/E-Commerce",
       icon: "🛒",
       color: "from-green-500 to-emerald-500",
       hoverColor: "green"
@@ -22,6 +24,7 @@ export default function Projects() {
       title: "Car Racing",
       description: "Welcome to my JavaScript Car Game — an interactive racing experience that demonstrates my skills in game logic, animation, and browser APIs. This project showcases dynamic vehicle controls, collision detection, procedurally generated tracks, and responsive UI built with plain JavaScript and the Canvas API. Each level and mechanic was designed to highlight performance-aware coding, modular architecture, and attention to user experience. The game reflects my iterative learning process: from optimizing frame updates to polishing input handling and sound integration. You'll find code that balances readability with efficiency, plus documentation on how features were implemented and the tools used. I built this game to combine creativity with technical problem-solving, and it's a snapshot of my ability to deliver engaging interactive experiences.",
       link: "https://car-game-pi-rose.vercel.app",
+      github: "https://github.com/Udit-Panwar/Car-Game",
       icon: "🏎️",
       color: "from-yellow-500 to-amber-500",
       hoverColor: "yellow"
@@ -80,18 +83,33 @@ export default function Projects() {
                   {project.description}
                 </p>
 
-                {/* View Project Button */}
-                {project.link && (
-                  <a 
-                    href={project.link}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="mt-auto inline-flex items-center justify-center gap-2 px-6 py-3 bg-gradient-to-r from-emerald-500 to-green-600 text-white font-semibold rounded-xl shadow-lg hover:shadow-emerald-500/50 hover:scale-105 transition-all duration-300 group/btn"
-                  >
-                    <span>View Project</span>
-                    <span className="group-hover/btn:translate-x-1 transition-transform duration-300">→</span>
-                  </a>
-                )}
+                {/* Buttons */}
+                <div className="mt-auto space-y-3">
+                  {project.link && (
+                    <a 
+                      href={project.link}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="w-full inline-flex items-center justify-center gap-2 px-6 py-3 bg-gradient-to-r from-emerald-500 to-green-600 text-white font-semibold rounded-xl shadow-lg hover:shadow-emerald-500/50 hover:scale-105 transition-all duration-300 group/btn"
+                    >
+                      <span>View Project</span>
+                      <span className="group-hover/btn:translate-x-1 transition-transform duration-300">→</span>
+                    </a>
+                  )}
+                  
+                  {project.github && (
+                    <a 
+                      href={project.github}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="w-full inline-flex items-center justify-center gap-2 px-6 py-3 bg-white/10 backdrop-blur-sm text-white font-semibold rounded-xl border border-white/20 hover:bg-white/20 hover:border-emerald-500/50 hover:scale-105 transition-all duration-300 group/github"
+                    >
+                      <span className="text-xl">💻</span>
+                      <span>View Code</span>
+                      <span className="group-hover/github:translate-x-1 transition-transform duration-300">→</span>
+                    </a>
+                  )}
+                </div>
               </div>
 
               {/* Decorative Corner */}
