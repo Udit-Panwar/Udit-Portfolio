@@ -14,7 +14,8 @@ export default function Projects() {
     {
       title: "E-commerce App",
       description: "Welcome to our e-commerce platform, where shopping is made simple, fast, and secure. Explore a wide range of products across multiple categories, all curated to meet your needs and lifestyle. Enjoy a seamless browsing experience with easy navigation and detailed product descriptions. Our secure payment system ensures that your transactions are safe and hassle-free. Benefit from fast and reliable delivery straight to your doorstep. Stay updated with the latest deals, offers, and discounts to get the best value for your money. Our responsive customer support is always ready to assist you with any queries. Shop anytime, anywhere, on any device with our fully optimized platform. Experience convenience, reliability, and satisfaction with every purchase. Make your online shopping journey effortless and enjoyable with us.",
-      link: "https://e-commerce-gray-phi-51.vercel.app",
+      // link: "https://e-commerce-gray-phi-51.vercel.app",
+      link: "https://zamana-ecommerce-qdri-git-main-udit-panwars-projects.vercel.app",
       github: "https://github.com/Udit-Panwar/E-Commerce",
       icon: "🛒",
       color: "from-green-500 to-emerald-500",
@@ -199,3 +200,4 @@ export default function Projects() {
     </section>
   );
 }
+
